@@ -44,6 +44,8 @@ rbg's FasterRCNN code: [https://github.com/rbgirshick/py-faster-rcnn](https://gi
 3. run train.py
    
 ### 2.How to use?
+#### **Note: decentralization in preprocesing is based on BGR channels, so you must guarantee your pre-trained model is trained on the same channel set if you use transfer learning**
+
 For example:
 
 VGG:
