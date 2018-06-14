@@ -7,12 +7,23 @@ reference:
 rbg's FasterRCNN code: [https://github.com/rbgirshick/py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn)
 
 -----
-### Before Run You Need:
+
+# Model Perfomance 
+Train on VOC2017 Test on VOC2017  
+
+   | Backbone        | mAp |
+   | ----------      |:------:|
+   | VGG16 | 0.7061 |
+   | ResNet101 | 0.754 |
+
+# Train Your Model
+### 1.Before Run You Need:
 1. cd ./lib 
  
-   change gpu_id in make.sh and setup.py
+   > Change gpu_id in make.sh and setup.py.    
+   Detially, you need modify parameter setting in line 5, 12 and 19 in make.sh and line 143 in setup.py where include key words '-arch=' depend on your gpu model.(select appropriate architecture described in table below) 
    
-   sh make.sh
+   > sh make.sh
 
     | GPU model        | Architecture    | 
     | --------   | :-----: |
@@ -24,18 +35,15 @@ rbg's FasterRCNN code: [https://github.com/rbgirshick/py-faster-rcnn](https://gi
 
 2. cd ../
 	 
-   mkdir ./data
+   > mkdir ./data
 	 
-   mkdir ./data/pretrained_model
+   > mkdir ./data/pretrained_model
 	 
-   download pre-trained weights in ./data/pretrained_model
-3.run train.py
+   > download pre-trained weights in ./data/pretrained_model
    
+3. run train.py
    
-----
-###########################
-
-### How to use?
+### 2.How to use?
 For example:
 
 VGG:
