@@ -8,7 +8,7 @@ rbg's FasterRCNN code: [https://github.com/rbgirshick/py-faster-rcnn](https://gi
 
 -----
 
-# Model Perfomance 
+# Model Performance 
 ### Train on VOC2017 Test on VOC2017  
 
    | Backbone        | mAp |
